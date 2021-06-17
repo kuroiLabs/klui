@@ -1,0 +1,49 @@
+@import 'colors';
+
+button,
+a.kl-button {
+  background: $primary;
+  border: 2px solid $primary;
+  color: $dark;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  transition: 300ms;
+  -webkit-appearance: none;
+  &.accent {
+    background: $accent;
+    border-color: $accent;
+    color: $light;
+  }
+  &.outline {
+    background: transparent;
+    color: $primary;
+    &.accent {
+      color: $accent;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    box-shadow: 8px 8px 0 0 rgba(black, 0.69);
+    &.outline {
+      background: $primary;
+      border-color: $primary;
+      color: $dark;
+      &.accent {
+        background: $accent;
+        border-color: $accent;
+        color: $light;
+      }
+    }
+  }
+  &[disabled] {
+    background: #808080;
+    border-color: #808080;
+    color: $dark;
+  }
+}

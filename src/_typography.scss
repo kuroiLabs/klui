@@ -1,0 +1,271 @@
+@import 'colors';
+@import 'transitions';
+@import 'typescale';
+@import 'mediaqueries';
+@import 'spacing';
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: $kl-type-xl;
+}
+h2 {
+  font-size: $kl-type-lg;
+}
+h3 {
+  font-size: $kl-type-md;
+}
+h4 {
+  font-size: $kl-type-base;
+}
+
+p,
+a,
+li,
+div,
+span,
+strong,
+em {
+  @media #{$xl} {
+    font-size: $kl-type-lg;
+    line-height: $kl-type-xl;
+  }
+  @media #{$md}, #{$lg} {
+    font-size: $kl-type-md;
+    line-height: 1.5 * $kl-type-lg;
+  }
+  @media #{$sm} {
+    font-size: $kl-type-base;
+    line-height: 1.5 * $kl-type-lg;
+  }
+}
+
+p,
+li,
+span,
+strong,
+em {
+  > a,
+  > a:visited {
+    color: inherit;
+    border-bottom: 1px $primary;
+    box-shadow: inset 0 -0.25em 0 0 $primary;
+    text-decoration: none;
+    transition: box-shadow 500ms $transition-ease-in;
+    &:hover {
+      color: $dark;
+      box-shadow: inset 0 -1.5em 0 0 $primary;
+    }
+  }
+}
+
+code,
+pre code {
+  background: rgba(black, 0.1);
+  border-radius: 0.125rem;
+  font-family: monospace;
+  display: inline-block;
+  padding: 0 $kl-spacing-xs;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li,
+div,
+span,
+strong,
+em,
+code,
+pre code {
+  line-height: 1.5;
+}
+
+.kl-type-xs,
+[kl-type="xs"] {
+  font-size: $kl-type-xs;
+}
+.kl-type-sm,
+[kl-type="sm"] {
+  font-size: $kl-type-sm;
+}
+.kl-type-base,
+[kl-type="base"] {
+  font-size: $kl-type-base;
+}
+.kl-type-md,
+[kl-type="md"] {
+  font-size: $kl-type-md;
+}
+.kl-type-lg,
+[kl-type="lg"] {
+  font-size: $kl-type-lg;
+}
+.kl-type-xl,
+[kl-type="xl"] {
+  font-size: $kl-type-xl;
+}
+.kl-type-xxl,
+[kl-type="xxl"] {
+  font-size: $kl-type-xxl;
+}
+
+.kl-type-transform-lowercase,
+[kl-type-transform="lowercase"] {
+  text-transform: lowercase;
+}
+.kl-type-transform-uppercase,
+[kl-type-transform="uppercase"] {
+  text-transform: uppercase;
+}
+.kl-type-transform-capitalize,
+[kl-type-transform="capitalize"] {
+  text-transform: capitalize;
+}
+
+// type color
+.kl-color-light,
+[kl-color="light"] {
+  color: $light;
+}
+.kl-color-dark,
+[kl-color="dark"] {
+  color: $dark;
+}
+.kl-color-primary,
+[kl-color="primary"] {
+  color: $primary;
+}
+.kl-color-accent,
+[kl-color="accent"] {
+  color: $accent;
+}
+.kl-color-warn,
+[kl-color="warn"] {
+  color: $warn;
+}
+.kl-color-success,
+[kl-color="success"] {
+  color: $success;
+}
+
+// font weight
+.kl-type-weight-bold,
+[kl-type-weight="bold"] {
+  font-weight: 700;
+}
+.kl-type-weight-thicc,
+[kl-type-weight="thicc"] {
+  font-weight: 900;
+}
+
+// fade
+.kl-fade-10,
+[kl-fade="10"] {
+  opacity: 0.9;
+}
+.kl-fade-20,
+[kl-fade="20"] {
+  opacity: 0.8;
+}
+.kl-fade-30,
+[kl-fade="30"] {
+  opacity: 0.7;
+}
+.kl-fade-40,
+[kl-fade="40"] {
+  opacity: 0.6;
+}
+.kl-fade-50,
+[kl-fade="50"] {
+  opacity: 0.5;
+}
+.kl-fade-60,
+[kl-type-fade="60"] {
+  opacity: 0.4;
+}
+.kl-fade-70,
+[kl-fade="70"] {
+  opacity: 0.3;
+}
+.kl-fade-80,
+[kl-fade="80"] {
+  opacity: 0.2;
+}
+.kl-fade-90,
+[kl-fade="90"] {
+  opacity: 0.1;
+}
+.kl-fade-100,
+[kl-fade="100"] {
+  opacity: 0;
+}
+
+// background color
+.kl-background-color-light,
+[kl-background-color="light"] {
+  background-color: $light;
+}
+.kl-background-color-dark,
+[kl-background-color="dark"] {
+  background-color: $dark;
+}
+.kl-background-color-primary,
+[kl-background-color="primary"] {
+  background-color: $primary;
+}
+.kl-background-color-accent,
+[kl-background-color="accent"] {
+  background-color: $accent;
+}
+.kl-background-color-warn,
+[kl-background-color="warn"] {
+  background-color: $warn;
+}
+.kl-background-color-success,
+[kl-background-color="success"] {
+  background-color: $success;
+}
+
+// border color
+.kl-border-color-light,
+[kl-border-color="light"] {
+  border-color: $light;
+}
+.kl-border-color-dark,
+[kl-border-color="dark"] {
+  border-color: $dark;
+}
+.kl-border-color-primary,
+[kl-border-color="primary"] {
+  border-color: $primary;
+}
+.kl-border-color-accent,
+[kl-border-color="accent"] {
+  border-color: $accent;
+}
+.kl-border-color-warn,
+[kl-border-color="warn"] {
+  border-color: $warn;
+}
+.kl-border-color-success,
+[kl-border-color="success"] {
+  border-color: $success;
+}
+
+.encrypted-email:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+  cursor: pointer;
+}
