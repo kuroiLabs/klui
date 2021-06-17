@@ -1,11 +1,17 @@
+@import 'mediaqueries';
+@import 'spacing';
+
 .kl-content-area {
-  padding-bottom: 2rem;
+  padding-bottom: $kl-spacing-lg;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
-  padding-top: 2rem;
+  padding-top: $kl-spacing-lg;
   @media #{$sm}, #{$md} {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: $kl-spacing-md;
+    padding-right: $kl-spacing-md;
+  }
+  &.full-screen {
+    height: 100vh;
   }
 }
 
@@ -17,7 +23,6 @@
 }
 
 .kl-hero {
-  justify-content: flex-end;
   display: flex;
   flex-direction: column;
   min-height: 33vh;
