@@ -2,7 +2,7 @@
 @import 'spacing';
 @import 'transitions';
 
-.app-header {
+.kl-app-header {
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -51,14 +51,14 @@
   }
 }
 
-.branding {
+.kl-branding {
   display: flex;
   pointer-events: initial;
   text-decoration: none;
   align-items: center;
 }
 
-.nav-icon-target {
+.kl-nav-icon-target {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -70,7 +70,7 @@
   z-index: 900;
 }
 
-.nav-icon {
+.kl-nav-icon {
   color: $light;
   height: 1rem;
   position: relative;
@@ -108,12 +108,12 @@
   }
 }
 
-.nav-controls {
+.kl-nav-controls {
   align-items: center;
   display: flex;
 }
 
-.nav-menu-wrap {
+.kl-nav-menu-wrap {
   background-color: $dark;
   box-shadow: none;
   display: flex;
@@ -143,7 +143,7 @@
   }
 }
 
-.nav-menu {
+.kl-nav-menu {
   margin: 0;
   padding: 4.5rem 0 0 1rem;
   h3 {
@@ -161,7 +161,7 @@
   }
 }
 
-.nav-link {
+.kl-nav-link {
   cursor: pointer;
   display: block;
   line-height: 2.5rem;
@@ -173,7 +173,7 @@
   }
 }
 
-.nav-menu-item {
+.kl-nav-menu-item {
   align-items: center;
   background: rgba(0, 0, 0, 0);
   color: $light;
@@ -193,7 +193,7 @@
   }
 }
 
-.nav-overlay {
+.kl-nav-overlay {
   background: rgba($dark, 0.75);
   height: 100vh;
   left: 0;
@@ -211,7 +211,7 @@
   }
 }
 
-.app-copyright {
+.kl-app-copyright {
   color: $light;
   padding: 1rem 2rem;
 }
