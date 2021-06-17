@@ -1,0 +1,33 @@
+{
+  "name": "klui",
+  "version": "0.0.1",
+  "description": "SCSS package for kuroiLabs standard web UI styles",
+  "main": "css/main.css",
+  "scripts": {
+    "copyPkgJSON": "shx cp package.json lib/package.json",
+    "compileSCSS": "node-sass --output-style=compressed src/main.scss lib/css/main.css",
+    "copySCSS": "shx cp -rf src lib/scss",
+    "build": "shx rm -rf lib && npm run compileSCSS && npm run copySCSS && npm run copyPkgJSON",
+    "pack": "npm pack ./lib",
+    "publish": "npm publish ./lib --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuroiLabs/KLUI.git"
+  },
+  "keywords": [
+    "scss",
+    "UI",
+    "framework"
+  ],
+  "author": "kuro <kuro@kuroi.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuroiLabs/klui/issues"
+  },
+  "homepage": "https://github.com/kuroiLabs/klui#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "shx": "^0.3.3"
+  }
+}
