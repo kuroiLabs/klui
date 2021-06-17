@@ -1,5 +1,5 @@
 {
-  "name": "klui",
+  "name": "@kuroi/klui",
   "version": "0.0.1",
   "description": "SCSS package for kuroiLabs standard web UI styles",
   "main": "css/main.css",
@@ -9,7 +9,7 @@
     "copySCSS": "shx cp -rf src lib/scss",
     "build": "shx rm -rf lib && npm run compileSCSS && npm run copySCSS && npm run copyPkgJSON",
     "pack": "npm pack ./lib",
-    "publish": "npm publish ./lib --access=public"
+    "publish": "npm publish ./lib --access=public --scope=@kuroi"
   },
   "repository": {
     "type": "git",
