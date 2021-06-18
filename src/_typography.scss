@@ -23,11 +23,7 @@ strong,
 em,
 code,
 pre code {
-  @media #{$xxl} {
-    font-size: $kl-type-lg;
-    line-height: $kl-type-xl;
-  }
-  @media #{$md}, #{$lg}, #{$xl} {
+  @media #{$md}, #{$lg}, #{$xl}, #{$xxl} {
     font-size: $kl-type-md;
     line-height: 1.5 * $kl-type-lg;
   }
