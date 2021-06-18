@@ -162,6 +162,7 @@
 }
 
 .kl-nav-link {
+  box-shadow: none;
   cursor: pointer;
   display: block;
   line-height: 2.5rem;
@@ -209,6 +210,13 @@
     opacity: 1;
     visibility: visible;
   }
+}
+
+/**
+ * JS target class for anything that will close the nav
+ */
+.kl-close-nav {
+  cursor: pointer;
 }
 
 .kl-app-copyright {
