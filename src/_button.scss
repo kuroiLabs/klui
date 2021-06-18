@@ -4,6 +4,7 @@ button,
 a.kl-button {
   background: $primary;
   border: 2px solid $primary;
+  box-shadow: none;
   color: $dark;
   cursor: pointer;
   display: inline-block;
