@@ -1,6 +1,6 @@
 {
   "name": "@kuroi/klui",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "SCSS package for kuroiLabs standard web UI styles",
   "main": "css/main.css",
   "scripts": {
